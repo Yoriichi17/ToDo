@@ -1,0 +1,145 @@
+.App {
+  text-align: center;
+}
+
+.card {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aliceblue;
+  margin: 10px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border: 3px solid black;
+}
+.completed {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: green;
+  margin: 10px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border: 3px solid black;
+  border-radius: 10px;
+  color: black;
+  
+}
+
+.card:hover {
+  background-color: black;
+  color: red;
+  transition: 0.5s;
+  box-shadow: 5px 5px 5px 5px grey;
+  border : 3px solid red;
+}
+.completed:hover {
+  background-color: green;
+  border: 3px solid black;
+  color: white;
+  border-radius: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto auto;
+  padding: 0 10px;
+
+  
+}
+
+.actions {
+display: flex;
+gap: 10px;
+cursor: pointer;
+}
+
+#input {
+  height: 40px;
+  width: 400px;
+  background-color: aliceblue;
+  border: 3px solid black;
+  font-size: large;
+}
+
+#input:hover {
+  box-shadow: 5px 5px 5px 5px gray;
+  background-color: navajowhite;
+  transition: 0.5s;
+ 
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+#head {
+  text-decoration: underline;
+}
+
+#addbtn {
+  background-color: aliceblue;
+  border: 3px solid black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#addbtn:hover {
+  background-color: greenyellow;
+  color: red;
+  transition: 0.5s;
+  box-shadow: 2px 2px 2px 2px grey;
+}
+
+.icon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.icon-text {
+  visibility: hidden;
+  width: 120px;
+  color: red;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  top: -25px;
+  right: -50px;
+  opacity: 0;
+  transition: 0.1s;
+}
+
+.icon-container:hover .icon-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.checkBox {
+  height: 12px;
+  width: 12px;
+  border: 1px solid red;
+  border-radius: 50%;
+}
+.CBcompleted {
+  height: 12px;
+  width: 12px;
+  border: 1px solid red;
+  border-radius: 50%;
+  background-color: blue;
+}
+
+.box {
+  cursor: pointer;
+  display: flex; 
+  align-items: center;
+  gap: 50px;
+}
